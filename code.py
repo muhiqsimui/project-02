@@ -15,13 +15,6 @@ print (resp)
 
 cov_id_raw = resp.json()
 
-from pandas.io.json import json_normalize
-cov_id_df = json_normalize(cov_id_raw)
-cov_id_df
-
-import pandas as pd
-pd.DataFrame(cov_id_raw)
-
 print('Length of cov_id_raw : %d.' %len(cov_id_raw))
 print('Komponen cov_id_raw  : %s.' %cov_id_raw.keys())
 cov_id_update = cov_id_raw['update']
